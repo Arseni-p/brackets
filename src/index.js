@@ -7,7 +7,7 @@ module.exports = function check(str, bracketsConfig) {
             for (let j = 0; j < bracketsConfig.length; j++) {
                 let configItem = bracketsConfig[j];
                 
-                if (strArr[i] === bracketsConfig[j][0] && strArr[i+1] === bracketsConfig[j][1]) {
+                if (strArr[i] === configItem[0] && strArr[i+1] === configItem[1]) {
                     strArr.splice(i, 2);
                     i = -1;
                 } 
